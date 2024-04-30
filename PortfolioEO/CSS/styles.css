@@ -1,0 +1,294 @@
+/*color pallete ideas*/
+/*https://colorhunt.co/palette/b3c8cfbed7dcf1eedce5ddc5
+https://colorhunt.co/palette/a79277d1bb9eead8c0fff2e1
+https://colorhunt.co/palette/62725476885bddddddeeeeee
+https://colorhunt.co/palette/b5c0d0ccd3caf5e8ddeed3d9 */
+
+/* This font section sets the webpages font to the imported google one*/
+.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.nanum-gothic-regular {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:"Merriweather", serif;
+    background-color: #DDDDDD;
+  }
+h3{
+  font-family: "Nanum Gothic", sans-serif;
+}
+#infoPage{
+  font-family: "Nanum Gothic", sans-serif;
+
+} 
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+.icon{
+  color: #EEEEEE;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #DDDDDD;
+  position: relative;
+  padding-bottom: 1%;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: #76885B;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.mylinks a{
+  text-decoration: #76885B;
+}
+.topnav a.icon {
+  background: #627254;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #EEEEEE;
+  color: black;
+}
+
+/*.active {
+  background-color: #627254;
+  color: #76885B;
+}*/ 
+  /* responsive styling rules */
+
+    @media screen and (max-width: 500px){
+      .collage1, .collage2, .collage3 {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      /* CSS for Tablet */
+      @media (max-width: 768px) {
+        .grid-item {
+          width: 50%;
+        }
+      }
+      
+      /* CSS for Mobile */
+      @media (max-width: 480px) {
+        .grid-item {
+          width: 100%;
+        }
+      }
+      .hero-image{
+        display: none;
+      }
+      .hero-text{
+        display:none;
+      }
+      /* Collage style rules for first page */
+      .collage1 {
+        font-family:"Merriweather", serif;
+        font-size: medium;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 6px;
+        width:100%
+    
+      }
+      .collage2 {
+        font-family:"Merriweather", serif;
+        font-size: medium;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 6px;
+        width:100%
+      }
+      .collage3 {
+        font-family:"Merriweather", serif;
+        font-size: medium;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 6px;
+        width:100%
+      }
+      .grid-item {
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        width:100%;
+      }
+      section{
+        font-family: "Nanum Gothic", sans-serif;
+        display: grid;
+        grid-template-columns: auto auto ;
+        gap: 4em;
+        color: #EEEEEE;
+          background-color: #627254;
+          border: 1px solid #000;
+          padding: 2%;
+          text-align: center;
+          margin-bottom: 2%;
+          width:100%;                                                  
+      }
+    }
+    #form{
+      width: 100%;
+      background-color: #DDDDDD;
+      font-family: "Nanum Gothic", sans-serif;
+    }
+  #form:hover{
+    text-decoration: underline;
+
+  }
+  /*hero image styles*/
+  .hero-image {
+    background-image: "images/hood1.jpg";
+    max-height: 50%;
+    max-width: 100%;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+  }
+  img{
+    max-height: 100%;
+    max-width: 100%;
+    border:none;
+  }
+  .hero-text{
+   position: absolute;
+   left: 6%;
+   top:8%;
+   color: #EEEEEE;
+   font-family: "Nanum Gothic", sans-serif;
+   font-size: 150;
+  }
+  /* Collage style rules for first page */
+  .collage1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 6px;
+    width:50%;
+    border: none;
+    p{
+      font-size: large;
+      font-family:"Merriweather", serif;
+      font-weight: bold;
+    }
+  }
+  .collage2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 6px;
+    width:50%;
+    float: right;
+    border: none;
+    p{
+      font-size: large;
+      font-family:"Merriweather", serif;
+      font-weight: bold;
+    }
+  }
+  .collage3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 6px;
+    width:50%;
+    border: none;
+  }
+  .grid-item {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+  td{
+    font-family: "Nanum Gothic", sans-serif;
+    text-decoration: none;
+  }
+  /*horizontal borders for table*/
+  th, td {
+    border-bottom: 1px dashed #627254;
+  }
+  /*links style rules*/
+  a:link{
+    text-decoration: none;
+    color: #000;
+  }
+  section{
+    font-family: "Nanum Gothic", sans-serif;
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 4em;
+    color: #EEEEEE;
+      background-color: #627254;
+      border: 1px solid #000;
+      padding: 2%;
+      text-align: center;
+      margin-bottom: 2%;
+      width:60%;                                                  
+  }
+  
+  
